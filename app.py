@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
-import pandas as pdapp = Flask(__name__)
+import pandas as pd
+app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
