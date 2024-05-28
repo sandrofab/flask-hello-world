@@ -23,7 +23,7 @@ def data():
 def upload():
     if request.method == 'POST':
         df = pd.read_csv(request.files.get('file'))
-        return render_template('upload.html', shape=df.shape)
+        return render_template('upload.html', shape=df.shape, first=df[0])
     return render_template('upload.html')
     return df[0]
 
